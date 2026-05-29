@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  /* Palette variables */
+  --negro: #2b2a28;
+  --gris: #f4f1ed;
+  --caramelo: #d6b887;
+  --dorado: #c7a26c;
+  --marfil: #fbf7f1;
+  --beige: #f5eee6;
+
+  /* Cream-first page: light background, warm text */
+  background: var(--marfil);
+  color: var(--negro);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.btn-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 320px;
+  padding: 0.95rem 1.5rem;
+  background-color: var(--caramelo);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 1rem;
+  color: var(--marfil);
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(43, 42, 40, 0.06);
+  transition: all 0.18s ease;
+}
+
+.btn-action:hover {
+  background-color: var(--dorado);
+  transform: translateY(-1px);
+}
+
+.btn-action:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+}
+
+/* Centrar horizontalmente todos los contenedores <div> */
+div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Palette utility classes */
+.section-secondary {
+  background-color: var(--gris);
+  color: var(--marfil);
+}
+
+.alt-bg {
+  background-color: var(--beige);
+  color: var(--negro);
+}
+
+.muted-text {
+  color: rgba(245, 241, 234, 0.85);
+}
