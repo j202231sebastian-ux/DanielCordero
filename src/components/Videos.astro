@@ -1,33 +1,101 @@
-<section class="mx-auto w-full max-w-7xl px-4 py-12">
-  <p class="text-center text-lg font-bold uppercase tracking-[0.35em] text-sky-500 md:text-xl mb-8">
-    Mis Últimos Videos
-  </p>
+---
+---
 
-  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-    <div class="overflow-hidden rounded-2xl section-secondary shadow-[0_10px_30px_rgba(15,23,42,0.1)] hover:shadow-[0_15px_40px_rgba(15,23,42,0.15)] transition-shadow duration-300">
-      <iframe 
-        src="https://www.tiktok.com/player/v1/7621389787122912532?rel=0" 
-        allow="fullscreen" 
-        style="width: 100%; height: 600px; border: none;">
-      </iframe>
+<section class="mx-auto w-full max-w-7xl px-4 py-12 bg-[#Fdfbf7]" id="recursos">
+  <!-- Contenedor Principal Estilo Tarjeta -->
+  <div class="border border-[#E6E1DA] rounded-2xl p-6 md:p-8 bg-[#Fdfbf7] relative">
+    
+    <!-- Encabezado -->
+    <div class="text-center mb-8">
+      <p class="inline-flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#6A7B66]">
+        <svg class="w-3 height-3 fill-current" viewBox="0 0 24 24">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .7.08V9.36a6.37 6.37 0 0 0-1.29-.13A6.33 6.33 0 0 0 2.5 15.56a6.33 6.33 0 0 0 10.36 4.92 6.33 6.33 0 0 0 3.39-5.59V7.92a8.21 8.21 0 0 0 3.34 2.44z"/>
+        </svg>
+        Videos que te pueden ayudar
+      </p>
+      <h2 class="font-serif text-3xl md:text-4xl text-[#1E2E4C] mt-2">
+        Contenido diario en TikTok
+      </h2>
     </div>
 
-    <div class="overflow-hidden rounded-2xl section-secondary shadow-[0_10px_30px_rgba(15,23,42,0.1)] hover:shadow-[0_15px_40px_rgba(15,23,42,0.15)] transition-shadow duration-300">
-      <iframe 
-        src="https://www.tiktok.com/player/v1/7623637524904152340?rel=0" 
-        allow="fullscreen" 
-        style="width: 100%; height: 600px; border: none;">
-      </iframe>
+    <!-- Contenedor de Videos (Fila Horizontal con Scroll en móvil / Grid de 5 en desktop) -->
+    <div class="relative flex items-center">
+      <div class="grid w-full grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5 overflow-x-auto no-scrollbar pb-4">
+        
+        <!-- Tarjeta de Video 1 -->
+        <div class="overflow-hidden rounded-xl bg-slate-900 aspect-[9/16] w-full min-w-[160px]">
+          <iframe 
+            src="https://www.tiktok.com/player/v1/7621389787122912532?rel=0" 
+            allow="fullscreen" 
+            class="w-full h-full border-none">
+          </iframe>
+        </div>
+
+        <!-- Tarjeta de Video 2 -->
+        <div class="overflow-hidden rounded-xl bg-slate-900 aspect-[9/16] w-full min-w-[160px]">
+          <iframe 
+            src="https://www.tiktok.com/player/v1/7623637524904152340?rel=0" 
+            allow="fullscreen" 
+            class="w-full h-full border-none">
+          </iframe>
+        </div>
+
+        <!-- Tarjeta de Video 3 -->
+        <div class="overflow-hidden rounded-xl bg-slate-900 aspect-[9/16] w-full min-w-[160px]">
+          <iframe 
+            src="https://www.tiktok.com/player/v1/7623251155497307413?rel=0" 
+            allow="fullscreen" 
+            class="w-full h-full border-none">
+          </iframe>
+        </div>
+
+        <!-- Tarjeta de Video 4 (Duplicado/Placeholder para completar las 5 columnas de la imagen) -->
+        <div class="overflow-hidden rounded-xl bg-slate-900 aspect-[9/16] w-full min-w-[160px]">
+          <iframe 
+            src="https://www.tiktok.com/player/v1/7623637524904152340?rel=0" 
+            allow="fullscreen" 
+            class="w-full h-full border-none">
+          </iframe>
+        </div>
+
+        <!-- Tarjeta de Video 5 (Duplicado/Placeholder) -->
+        <div class="overflow-hidden rounded-xl bg-slate-900 aspect-[9/16] w-full min-w-[160px]">
+          <iframe 
+            src="https://www.tiktok.com/player/v1/7621389787122912532?rel=0" 
+            allow="fullscreen" 
+            class="w-full h-full border-none">
+          </iframe>
+        </div>
+
+      </div>
     </div>
 
-    <div class="overflow-hidden rounded-2xl section-secondary shadow-[0_10px_30px_rgba(15,23,42,0.1)] hover:shadow-[0_15px_40px_rgba(15,23,42,0.15)] transition-shadow duration-300">
-      <iframe 
-        src="https://www.tiktok.com/player/v1/7623251155497307413?rel=0" 
-        allow="fullscreen" 
-        style="width: 100%; height: 600px; border: none;">
-      </iframe>
+    <!-- Botón Inferior CTA -->
+    <div class="text-center mt-8">
+      <a 
+        href="https://www.tiktok.com/@daniel.cordero.oficial?utm_campaign=&utm_source=unknown&refer=player_v1&referrer_url=https%3A%2F%2Fwww.tiktok.com%2Fplayer%2Fv1%2F7623637524904152340%3Frel%3D0&referer_video_id=7623637524904152340" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="inline-flex items-center gap-2 px-6 py-2.5 border border-[#1E2E4C] rounded-lg text-xs font-bold uppercase tracking-wider text-[#1E2E4C] bg-transparent hover:bg-[#1E2E4C] hover:text-[#Fdfbf7] transition-colors duration-300">
+        Sígueme en TikTok
+        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .7.08V9.36a6.37 6.37 0 0 0-1.29-.13A6.33 6.33 0 0 0 2.5 15.56a6.33 6.33 0 0 0 10.36 4.92 6.33 6.33 0 0 0 3.39-5.59V7.92a8.21 8.21 0 0 0 3.34 2.44z"/>
+        </svg>
+      </a>
     </div>
+
   </div>
 </section>
+
+<style>
+  /* Utilidad para esconder la barra de scroll nativa manteniendo la funcionalidad */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
 
 <script async src="https://www.tiktok.com/embed.js"></script>

@@ -1,0 +1,97 @@
+<nav class="bg-[#fef9f1] border-b border-gray-200">
+  <div class="max-w-[1280px] mx-auto px-4 sm:px-6 py-4">
+    <div class="hidden md:flex md:items-center md:justify-between md:gap-6">
+      <a href="#" class="flex items-center shrink-0 ">
+        <img src="/logo.png" alt="Logo Daniel Cordero" class="h-14 w-auto" />
+      </a>
+
+      <div class="flex flex-1 items-center justify-end gap-8   lg:gap-8">
+        <a href="#inicio" class="text-sm font-medium text-[#1f2937] hover:text-[#c2623a] transition-colors uppercase tracking-wide">
+          INICIO
+        </a>
+        <a href="#sobre-mi" class="text-sm font-medium text-[#1f2937] hover:text-[#c2623a] transition-colors uppercase tracking-wide">
+          SOBRE MÍ
+        </a>
+        <a href="#recursos" class="text-sm font-medium text-[#1f2937] hover:text-[#c2623a] transition-colors uppercase tracking-wide">
+          RECURSOS GRATUITOS
+        </a>
+        <a href="#testimonios" class="text-sm font-medium text-[#1f2937] hover:text-[#c2623a] transition-colors uppercase tracking-wide">
+          TESTIMONIOS
+        </a>
+        <a href="#contacto" class="text-sm font-medium text-[#1f2937] hover:text-[#c2623a] transition-colors uppercase tracking-wide">
+          CONTACTO
+        </a>
+
+        <button class="bg-[#c2623a] text-white px-6 lg:px-8 py-3 rounded-md text-sm font-semibold uppercase tracking-wider hover:bg-[#a15130] transition-colors shadow-sm whitespace-nowrap">
+          CONOCE MI PROGRAMA
+        </button>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-3 md:hidden">
+      <div class="flex flex-col gap-3">
+        <a href="#" class="flex items-center justify-center shrink-0">
+          <img src="/logo.png" alt="Logo Daniel Cordero" class="h-14 w-auto" />
+        </a>
+
+        <div class="flex items-center justify-between gap-2">
+          <button class="bg-[#c2623a] text-white px-4 py-3 rounded-md text-sm font-semibold uppercase tracking-wider hover:bg-[#a15130] transition-colors shadow-sm whitespace-nowrap">
+            CONOCE MI PROGRAMA
+          </button>
+
+          <button
+            id="menu-toggle"
+            class="text-[#1f2937] hover:text-[#c2623a] p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#c2623a]"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden flex-col gap-3 border-t border-gray-200 pt-4 mt-1">
+        <a href="#inicio" class="text-sm font-medium text-[#1f2937] hover:text-[#c2623a] transition-colors uppercase tracking-wide">
+          INICIO
+        </a>
+        <a href="#sobre-mi" class="text-sm font-medium text-[#1f2937] hover:text-[#c2623a] transition-colors uppercase tracking-wide">
+          SOBRE MÍ
+        </a>
+        <a href="#recursos-gratuitos" class="text-sm font-medium text-[#1f2937] hover:text-[#c2623a] transition-colors uppercase tracking-wide">
+          RECURSOS GRATUITOS
+        </a>
+        <a href="#testimonios" class="text-sm font-medium text-[#1f2937] hover:text-[#c2623a] transition-colors uppercase tracking-wide">
+          TESTIMONIOS
+        </a>
+        <a href="#contacto" class="text-sm font-medium text-[#1f2937] hover:text-[#c2623a] transition-colors uppercase tracking-wide">
+          CONTACTO
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle?.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+
+    if (mobileMenu) {
+      mobileMenu.classList.toggle('hidden', isExpanded);
+      mobileMenu.classList.toggle('flex', !isExpanded);
+    }
+  });
+
+  mobileMenu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      menuToggle?.setAttribute('aria-expanded', 'false');
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('flex');
+    });
+  });
+</script>

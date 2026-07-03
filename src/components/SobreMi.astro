@@ -1,34 +1,272 @@
-<section class="mx-auto w-full max-w-3xl rounded-[1.25rem] alt-bg p-8 shadow-[0_25px_60px_rgba(15,23,42,0.12)] text-center">
-  <p class="text-lg font-bold uppercase tracking-[0.35em] text-sky-500 md:text-xl">
-    Sobre mí
-  </p>
-  <p class="mt-5 text-base leading-8 text-slate-600 md:text-lg">
-    Soy creador de contenido inspirado en conectar con personas reales, hablando de eso que muchos sienten pero pocos se atreven a decir. Comparto reflexiones sobre la vida, crecimiento personal, disciplina, propósito y fe, siempre desde una perspectiva auténtica y cercana.
-  </p>
-  <p class="mt-4 text-base leading-8 text-slate-600 md:text-lg">
-    Mi contenido nace del proceso, de las caídas, de aprender a construir una mejor versión de mí mientras camino de la mano de Dios. Creo en el poder de las palabras, en sanar la mente, fortalecer el espíritu y motivar a otros a seguir avanzando incluso cuando todo se siente incierto.
-  </p>
+---
+// Importa tus componentes si es necesario, pero este es autónomo.
+---
 
-  <div class="mt-8 grid gap-3 sm:grid-cols-2">
-    <div class="rounded-3xl border border-sky-100 bg-sky-50 px-4 py-3 text-left shadow-sm">
-      <p class="text-sm font-semibold uppercase tracking-[0.35em] text-sky-600">Fe</p>
-      <p class="mt-2 text-sm text-slate-600">Confianza y guía en cada paso de mi historia.</p>
-    </div>
-    <div class="rounded-3xl border border-indigo-100 bg-indigo-50 px-4 py-3 text-left shadow-sm">
-      <p class="text-sm font-semibold uppercase tracking-[0.35em] text-indigo-600">Reflexiones</p>
-      <p class="mt-2 text-sm text-slate-600">Pensamientos sinceros que invitan al cambio.</p>
-    </div>
-    <div class="rounded-3xl border border-emerald-100 bg-emerald-50 px-4 py-3 text-left shadow-sm">
-      <p class="text-sm font-semibold uppercase tracking-[0.35em] text-emerald-600">Crecimiento</p>
-      <p class="mt-2 text-sm text-slate-600">Evolucionar es la base de mi mensaje.</p>
-    </div>
-    <div class="rounded-3xl border border-amber-100 bg-amber-50 px-4 py-3 text-left shadow-sm">
-      <p class="text-sm font-semibold uppercase tracking-[0.35em] text-amber-600">Propósito</p>
-      <p class="mt-2 text-sm text-slate-600">Vivir con sentido y motivar con intención.</p>
-    </div>
-    <div class="sm:col-span-2 rounded-3xl border border-stone-100 bg-stone-50 px-4 py-3 text-left shadow-sm">
-      <p class="text-sm font-semibold uppercase tracking-[0.35em] text-stone-600">Vida real</p>
-      <p class="mt-2 text-sm text-slate-600">Historias auténticas que conectan con lo cotidiano.</p>
+<section class="about-me-section" id="sobre-mi">
+  <div class="container">
+    <div class="about-grid">
+      
+      <div class="image-column">
+        <div class="background-decorations">
+          <div class="green-arch"></div>
+          <div class="text-arch">
+
+          </div>
+        </div>
+        <div class="photo-wrapper">
+          <img src="danielCordero.png" alt="Daniel Cordero Sonriendo" class="main-photo" />
+          <div class="photo-badge">Coach • Mentor • Inspiración</div>
+        </div>
+      </div>
+
+      <div class="content-column">
+        <span class="label-tiny">SOBRE MÍ</span>
+        <h1>Hola, soy Daniel Cordero</h1>
+        <p class="titles">Coach motivacional | Creador de contenido</p>
+        
+        <div class="main-text">
+          <p>
+            Soy apasionado por ayudar a madres a encontrar esperanza, sanación y dirección en medio de los desafíos de la vida.
+          </p>
+          <p>
+            A través de la mentalidad, la Palabra de Dios y herramientas prácticas, te acompaño a transformar tu corazón, tu hogar y tu futuro.
+          </p>
+        </div>
+
+        <blockquote class="mission-quote">
+          <p class="mission-text">
+            <span class="quote-marks">“</span>
+            Mi misión es recordarte que Dios no solo puede cambiar tu historia, sino la de tu familia.
+            <span class="quote-marks">”</span>
+          </p>
+        </blockquote>
+
+        <div class="cta-wrapper">
+          <a href="#" class="cta-button">CONOCE MÁS SOBRE MÍ</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+  .about-me-section {
+    background: linear-gradient(135deg, #f7f3ec 0%, #fcf8f1 100%);
+    padding: 88px 0;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  @media (min-width: 992px) {
+    .about-grid {
+      grid-template-columns: 460px 1fr;
+      gap: 64px;
+    }
+  }
+
+  .image-column {
+    position: relative;
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 16px 0 16px 16px;
+  }
+
+  .background-decorations {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .green-arch {
+    position: absolute;
+    bottom: -40px;
+    left: -90px;
+    width: 320px;
+    height: 460px;
+    background: linear-gradient(180deg, #6a8264 0%, #788f6f 100%);
+    border-radius: 220px 220px 0 0;
+    opacity: 0.95;
+    transform: rotate(-8deg);
+  }
+
+  .text-arch {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .curved-text {
+    font-size: 10px;
+    font-weight: 700;
+    color: #6a8264;
+    letter-spacing: 0.3em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    transform: rotate(-12deg);
+  }
+
+  .photo-wrapper {
+    position: relative;
+    z-index: 10;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(106, 130, 100, 0.16);
+    border-radius: 32px;
+    box-shadow: 0 22px 60px rgba(15, 23, 42, 0.12);
+    backdrop-filter: blur(8px);
+  }
+
+  .main-photo {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    display: block;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  }
+
+  .photo-badge {
+    position: absolute;
+    bottom: 28px;
+    left: 28px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #41543c;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  }
+
+  .content-column {
+    z-index: 10;
+  }
+
+  .label-tiny {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #6a8264;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #2f3b31;
+    margin: 0 0 10px;
+  }
+
+  .titles {
+    font-size: 18px;
+    color: #bfa37d;
+    margin: 0 0 28px;
+  }
+
+  .main-text p {
+    font-size: 16px;
+    color: #5f6b63;
+    line-height: 1.8;
+    margin-bottom: 18px;
+  }
+
+  .mission-quote {
+    background: linear-gradient(135deg, #6a8264 0%, #51644c 100%);
+    padding: 28px 30px;
+    margin: 28px 0 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 24px rgba(81, 100, 76, 0.16);
+  }
+
+  .mission-text {
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .quote-marks {
+    font-size: 40px;
+    color: #f2d8a7;
+    line-height: 0;
+    vertical-align: sub;
+  }
+
+  .cta-wrapper {
+    margin-top: 32px;
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6a8264 0%, #4d6044 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 30px;
+    border-radius: 999px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 10px 22px rgba(81, 100, 76, 0.2);
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 26px rgba(81, 100, 76, 0.24);
+  }
+
+  @media (max-width: 991px) {
+    .about-me-section {
+      padding: 60px 0;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .titles {
+      font-size: 16px;
+    }
+
+    .mission-text {
+      font-size: 18px;
+    }
+
+    .green-arch {
+      bottom: -30px;
+      left: -70px;
+      width: 260px;
+      height: 400px;
+    }
+  }
+</style>

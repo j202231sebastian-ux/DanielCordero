@@ -1,40 +1,24 @@
 ---
-import Redes from "./Redes.astro"
 import SobreMi from "./SobreMi.astro"
 import Videos from "./Videos.astro"
 import Email from "./Email.astro"
 import Footer from "./Footer.astro"
+import NavBar from "./NavBar.astro"
+import Start from "./Start.astro"
+import CasosExitosos from "./CasosExitosos.astro"
 ---
 
-<div class="flex flex-col items-center justify-center gap-8 p-8 md:p-12 lg:p-16">
-  <div class="flex-shrink-0">
-    <img src="daniel.jpeg" alt="Daniel Cordero" class="w-80 h-80 md:w-96 md:h-96 rounded-lg object-cover shadow-lg" />
-  </div>
-  <div class="flex-1 text-center">
-    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-2">Daniel Cordero</h1>
-    <p class="text-2xl md:text-3xl text-gray-600">Coach motivacional | Creador de contenido</p>
-  </div>
-</div>
+<NavBar />
 
-<div class="flex flex-col items-center gap-4">
-	<Redes />
-  <button class="btn-action" type="button">E-BOOK</button>
-  <button class="btn-action" type="button">Mentoria Privada</button>
-  <button class="btn-action" type="button">Pauta conmigo</button>
-</div>
+<Start/>
 
-<div class="mt-8">
-	<SobreMi />
-</div>
+<SobreMi />
 
-<div>
-	<Videos />
-</div>
+<Videos />
 
-<div>
-	<Email/>
-</div>
+<CasosExitosos />
 
-<div>
-	<Footer />
-</div>
+<Email/>
+
+<Footer />
+

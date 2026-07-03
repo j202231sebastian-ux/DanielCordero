@@ -1,0 +1,153 @@
+---
+// Puedes definir aquí tus props si necesitas hacer los textos dinámicos en el futuro
+---
+
+<section class="bg-[#FCF8F3] py-4 px-4 sm:px-6 lg:px-8 font-sans text-[#1E293B]" id="inicio">
+  <div class="max-w-7xl mx-auto">
+    <!-- Grid Principal: Texto Izquierda + Video Derecha -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-12">
+      
+      <!-- Columna Izquierda: Información -->
+      <div class="lg:col-span-5 flex flex-col space-y-6">
+        <!-- Tag Superior -->
+        <div class="inline-flex items-center space-x-2 bg-white/60 border border-[#E2E8F0] px-3 py-1 rounded-full self-start">
+          <svg class="w-4 h-4 text-[#5F6F52]" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3c-1.2 0-2.4.4-3.4 1.1-.3-.6-.8-1.1-1.4-1.4C8 2.2 9 2 10 2c3.9 0 7.1 2.9 7.8 6.7C19.1 8.3 20 9.5 20 11c0 2.2-1.8 4-4 4-.3 0-.6 0-.9-.1C14.4 16.8 12.3 18 10 18c-.7 0-1.3-.1-2-.3V22H6v-5.2c-1.2-.8-2-2.1-2-3.6 0-2.2 1.6-4.1 3.8-4.4C8.1 6.1 9.9 4.3 12 4.1V3zm-2 13c1.7 0 3.2-.9 4.1-2.3-.6.2-1.3.3-2.1.3-2.2 0-4-1.4-4.7-3.3C6.6 11 6 11.9 6 13c0 1.7 1.3 3 3 3h1z"/>
+          </svg>
+          <span class="text-xs font-semibold tracking-wider text-[#5F6F52] uppercase">Mentalidad • Fe • Familia</span>
+        </div>
+
+        <!-- Título Principal (Estilo Serif elegante) -->
+        <h1 class="text-4xl sm:text-5xl font-normal tracking-tight text-[#0A2540] font-serif leading-[1.15]">
+          Ayudo a madres a transformar su mente, <span class="text-[#5F6F52] italic font-medium">sanar sus emociones</span> y restaurar su hogar desde la fe.
+        </h1>
+
+        <!-- Subtítulo -->
+        <p class="text-base text-[#000000] max-w-lg leading-relaxed">
+          Dios tiene un propósito para tu vida y tu familia, y todo puede cambiar desde hoy.
+        </p>
+
+        <!-- Lista de beneficios (Checks) -->
+        <ul class="space-y-3 w-full flex flex-col items-start justify-start text-left">
+  {[
+    " Fortalece tu mentalidad.",
+    " Sana tus emociones.",
+    " Mejora tu relación con tus hijos y tu familia.",
+    " Vive con paz y propósito."
+  ].map((item) => (
+    <li class="flex items-start justify-start text-left space-x-3 text-sm font-medium text-[#334155] w-full">
+      <div class="flex-shrink-0 mt-0.5 w-5 h-5 rounded-full bg-[#5F6F52] flex items-center justify-center text-white">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+        </svg>
+      </div>
+      <span class="text-left leading-relaxed flex-1">{item}</span>
+    </li>
+  ))}
+</ul>
+
+        <!-- Botón CTA de Acción -->
+        <div class="flex flex-col space-y-2 pt-2">
+          <a 
+            href="#" 
+            class="bg-[#C85C32] hover:bg-[#B04A22] text-white font-bold tracking-wider text-center py-4 px-6 rounded-lg shadow-md uppercase text-sm sm:text-base transition-colors"
+          >
+            Quiero transformar mi vida
+          </a>
+          <!-- Leyenda de Seguridad -->
+          <div class="flex items-center justify-center space-x-2 text-xs text-[#64748B]">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"></path>
+            </svg>
+            <span>Acceso inmediato • 100% Seguro</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna Derecha: Video de Facebook -->
+      <div class="lg:col-span-7 flex items-center justify-center">
+        <div class="w-full max-w-2xl lg:max-w-4xl">
+        <div class="overflow-hidden rounded-2xl section-secondary shadow-[0_10px_30px_rgba(15,23,42,0.1)] hover:shadow-[0_15px_40px_rgba(15,23,42,0.15)] transition-shadow duration-300">
+      <iframe 
+        src="https://www.tiktok.com/player/v1/7623251155497307413?rel=0" 
+        allow="fullscreen" 
+        style="width: 100%; height: 600px; border: none;">
+      </iframe>
+    </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de Características Inferior (Features grid) -->
+    <div class="bg-white/80 backdrop-blur-sm border border-[#E2E8F0] rounded-xl p-6 shadow-sm grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-4 items-center text-center md:text-left divide-y md:divide-y-0 md:divide-x divide-gray-200">
+      
+      <!-- Feature 1 -->
+      <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-3 pb-4 md:pb-0 justify-center">
+        <svg class="w-8 h-8 text-[#5F6F52] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+        </svg>
+        <div class="text-xs">
+          <span class="block font-bold text-sm text-[#0A2540]">+50,000</span>
+          <p class="text-gray-500 leading-tight">Madres impactadas</p>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-3 pt-4 md:pt-0 pb-4 md:pb-0 md:pl-4 justify-center">
+        <svg class="w-8 h-8 text-[#5F6F52] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a5.074 5.074 0 003.654-1.515V21h3.712V16.713a5.074 5.074 0 00-1.515-3.654M12 21a5.074 5.074 0 01-3.654-1.515V21H4.634V16.713a5.074 5.074 0 011.515-3.654M12 21v-8.25m0 0l3.04-3.04M12 12.75l-3.04-3.04M14.25 9.75a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+        </svg>
+        <div class="text-xs">
+          <span class="block font-bold text-gray-800">Basado en la Biblia</span>
+          <p class="text-gray-500 leading-tight">y principios eternos</p>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-3 pt-4 md:pt-0 pb-4 md:pb-0 md:pl-4 justify-center">
+        <svg class="w-8 h-8 text-[#5F6F52] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+        </svg>
+        <div class="text-xs">
+          <span class="block font-bold text-gray-800">Transformación real</span>
+          <p class="text-gray-500 leading-tight">por dentro y por fuera</p>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-3 pt-4 md:pt-0 md:pl-4 justify-center">
+        <svg class="w-8 h-8 text-[#5F6F52] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+        </svg>
+        <div class="text-xs">
+          <span class="block font-bold text-gray-800">Comunidad segura</span>
+          <p class="text-gray-500 leading-tight">y de apoyo</p>
+        </div>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-3 pt-4 md:pt-0 md:pl-4 justify-center col-span-2 md:col-span-1">
+        <svg class="w-8 h-8 text-[#5F6F52] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+        </svg>
+        <div class="text-xs">
+          <span class="block font-bold text-gray-800">Contenido práctico</span>
+          <p class="text-gray-500 leading-tight">y fácil de aplicar</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Importar fuentes de Google para calzar perfectamente con el diseño elegante */
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+  
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-sans {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+</style>
